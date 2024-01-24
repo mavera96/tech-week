@@ -1,0 +1,5 @@
+google-cloud-vision==3.5.0
+google-cloud-storage==2.14.0
+opencv-contrib-python==4.9.0.80
+pathlib==1.0.1
+functions-framework==3.*
