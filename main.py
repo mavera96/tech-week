@@ -25,7 +25,7 @@ def vision_api(cloud_event):
 
     # Restringir a imágenes que se encuentren dentro del folder "original"
     if not fullname.startswith("original/"):
-        raise Exception(f"{fullname} file is inside a folder that's not suitable for analysis")
+        print(f"{fullname} file is inside a folder that's not suitable for analysis")
     # Restringir a imagenes jepg
     if data["contentType"] != f"image/jpeg":
         raise RuntimeError(f"{name} file is not a jpeg image")
